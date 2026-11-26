@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+.contenedor-firma {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 100;
+}
+
+.imagen-firma {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera-principal {
+    text-align: center;
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.cabecera-principal h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.cabecera-principal p {
+    font-size: 1.1rem;
+    color: #64748b;
+}
+
+.contenedor-ejercicios {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-ejercicios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.tarjeta-ejercicio {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-left: 5px solid #38bdf8;
+    position: relative;
+    overflow: hidden;
+}
+
+.tarjeta-ejercicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: #f0f9ff;
+    border-left-color: #0284c7;
+}
+
+.tarjeta-ejercicio .numero {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #cbd5e1;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tarjeta-ejercicio h2 {
+    font-size: 1.2rem;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.tarjeta-ejercicio p {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.pie-pagina {
+    text-align: center;
+    margin-top: 50px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .contenedor-firma {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .cabecera-principal h1 {
+        font-size: 1.8rem;
+    }
+}

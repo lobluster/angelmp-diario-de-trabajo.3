@@ -1,0 +1,38 @@
+/*
+
+    Practica 14: Listas ordenadas, listas desordenadas y listas de definicion
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: brown;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+
+    margin-bottom: 60px; 
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 20px;
+    background-color: #f4f4f9;
+}

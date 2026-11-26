@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Incidencias Informáticas</title>
+    <link rel="stylesheet" href="Angel_15.css">
+</head>
+<body>
+
+    <div class="contenedor-principal">
+        <h1>Parte de Incidencias TIC</h1>
+        <div class="linea"></div>
+        <p class="subtitulo">Rellena el siguiente formulario para reportar fallos técnicos en el centro</p>
+        <form action="procesar_incidencia.php" method="post" class="formulario" target="_blank">
+            <fieldset class="grupo-tematico">
+                <legend>Datos del Solicitante</legend>
+
+                <div class="fila-flex">
+                    <div class="campo">
+                        <label for="nombre">Nombre y Apellidos:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Angel Martinez" minlength="3" maxlength="50" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo del Instituto:</label>
+                        <input type="email" id="email" name="email" placeholder="usuario@instituto.edu" required>
+                    </div>
+                </div>
+
+                <div class="fila-flex">
+                    <div class="campo">
+                        <label for="telefono">Teléfono / Extensión:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="600 123 456">
+                    </div>
+
+                    <div class="campo">
+                        <label for="pwd">Clave de autorización TIC:</label>
+                        <input type="password" id="pwd" name="pwd" placeholder="Contraseña de profesor" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo-tematico">
+                <legend>Ubicación y Detalles del Equipo</legend>
+
+                <div class="fila-flex">
+                    <div class="campo">
+                        <label for="fecha">Fecha de detección:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="aula">Número de Aula:</label>
+                        <input type="number" id="aula" name="aula" min="1" max="300" step="1" value="101">
+                    </div>
+
+                    <div class="campo">
+                        <label for="equipos_afectados">Nº de equipos afectados:</label>
+                        <input type="number" id="equipos_afectados" name="equipos_afectados" value="1" min="1" max="35">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="departamento">Departamento / Zona del centro:</label>
+                    <select id="departamento" name="departamento">
+                        <option value="informatica">Aulas de Informática</option>
+                        <option value="eso" selected>Aulas ESO</option>
+                        <option value="administracion">Secretaría</option>
+                        <option value="biblioteca">Biblioteca</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="dispositivos">Dispositivos con fallo (mantén Ctrl o Cmd para elegir varios):</label>
+                    <select id="dispositivos" name="dispositivos[]" multiple size="4">
+                        <option value="pc_profesor">Ordenador del Profesor</option>
+                        <option value="pc_alumno">Ordenador de Alumno</option>
+                        <option value="proyector">Proyector</option>
+                        <option value="red_wifi">Conexión a Internet</option>
+                        <option value="impresora">Impresora</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo-tematico">
+                <legend>Diagnóstico de la Incidencia</legend>
+
+                <div class="fila-flex">
+                    <div class="campo">
+                        <label for="urgencia">Nivel de urgencia (0 a 100):</label>
+                        <input type="range" id="urgencia" name="urgencia" min="0" max="100" value="50">
+                    </div>
+
+                    <div class="campo">
+                        <label for="color_etiqueta">Color de etiqueta identificativa:</label>
+                        <input type="color" id="color_etiqueta" name="color_etiqueta" value="#e74c3c">
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="captura">Adjuntar captura de pantalla o foto del error:</label>
+                    <input type="file" id="captura" name="captura">
+                </div>
+
+                <!-- Requisito 5: Textarea -->
+                <div class="campo">
+                    <label for="descripcion">Descripción detallada del problema:</label>
+                    <textarea id="descripcion" name="descripcion" rows="5" cols="30" placeholder="Explica qué ocurre, mensajes de error en pantalla, etc." required></textarea>
+                </div>
+            </fieldset>
+
+            <div class="botones-flex">
+                <button type="submit" class="btn-enviar">Enviar Incidencia</button>
+                <button type="reset" class="btn-limpiar">Limpiar Formulario</button>
+                <button type="button" class="btn-ayuda" onclick="alert('Para urgencias críticas llama a la extensión 404 de Soporte TIC.')">Ayuda Urgente</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 15px;
+    gap: 15px;
+}
+
+/* 1. HEADER (Encabezado) */
+.header {
+    background-color: #df524d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* CONTENEDOR MEDIO (Diseño de 3 columnas para nav, main y aside) */
+.contenedor-medio {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+}
+
+/* 2. NAV (Barra lateral izquierda) */
+.nav {
+    background-color: #df524d;
+    color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav h3 {
+    margin-bottom: 15px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* 3. MAIN (Contenido principal) */
+.main {
+    background-color: #80dbff; /* Tono marrón similar al de tu esquema */
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Artículos dentro del Main */
+.article-titulo {
+    background-color: #df524d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.article-titulo h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.article-galeria {
+    background-color: #df524d;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* FIGURE Y GALERÍA HORIZONTAL DE IMÁGENES */
+.figure {
+    width: 100%;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-imagen {
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Efecto zoom suave al pasar el ratón */
+.tarjeta-imagen img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* 4. ASIDE (Barra lateral derecha) */
+.aside {
+    background-color: #df524d;
+    color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.aside h3 {
+    margin-bottom: 15px;
+}
+
+/* 5. FOOTER (Pie de página) */
+.footer {
+    background-color: #df524d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE: Si la pantalla es pequeña, se acomoda en vertical */
+@media (max-width: 850px) {
+    .contenedor-medio {
+        flex-direction: column;
+    }
+    .nav, .aside {
+        width: 100%;
+    }
+}

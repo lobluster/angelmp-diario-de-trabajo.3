@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.titulo-sombra-1 {
+    color: #222;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.titulo-sombra-2 {
+    color: #166db5;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+.caja-sombra-1 {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer; 
+}
+
+.caja-sombra-2 {
+    background-color: #e8f4fd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(22, 109, 181, 0.4);
+    cursor: help; 
+}
+
+.degradado-lineal-1 {
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+.degradado-lineal-2 {
+    color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #11998e, #38ef7d, #0f9b0f);
+    cursor: wait; 
+}
+
+.degradado-radial-1 {
+    color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    background: radial-gradient(circle, #ff9a9e, #fecfef, #feada6);
+    color: #333;
+}
+
+.degradado-radial-2 {
+    color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    background: radial-gradient(ellipse at center, #2b5876, #4e4376);
+}
+
+.banner-final {
+    height: 220px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12%;
+    background-image: 
+        linear-gradient(to right, rgba(22, 109, 181, 0) 0%, rgba(22, 109, 181, 0) 48%, #166db5 52%, #166db5 100%),
+        url('liber.png'); 
+
+    background-size: 100% 100%, 55% 100%;
+    background-position: left center, left center;
+    background-repeat: no-repeat;
+    cursor: crosshair;
+}
+
+.banner-final h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+}

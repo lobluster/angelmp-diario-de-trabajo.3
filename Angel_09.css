@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.linea-negra {
+    width: 100%;
+    max-width: 700px;
+    height: 80px;
+    background-color: #333333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.bolas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bola {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid;
+}
+
+.bola img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.azul {
+    background-color: #0000FF;
+    border-color: #0000FF;
+}
+
+.amarilla {
+    background-color: #FFFF00;
+    border-color: #FFFF00;
+}
+
+.roja {
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
+.linea-verde {
+    width: 100%;
+    max-width: 700px;
+    height: 80px;
+    background-color: #7CFC00;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 18px;
+}

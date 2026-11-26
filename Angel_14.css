@@ -1,0 +1,35 @@
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body{ 
+  font-size: 1.6rem;
+}
+h1{ font-size: 4rem;}
+
+table{
+    background-image: linear-gradient(to right, rgb(235, 140, 140), white, rgb(162, 136, 255));
+}
+
+td, th{
+    border: 2px solid black;
+    text-align: center;
+    padding: 1rem;
+}
+
+th{
+    background-color: brown;
+}
+
+header{
+    background-color: brown;
+    padding: 2rem;
+}
+
+section{
+    background-color: rgb(177, 141, 108);
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    overflow: scroll;
+}

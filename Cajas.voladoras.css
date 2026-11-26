@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{background-color: beige;}
+
+.cabecera{
+    background-color: aquamarine;
+    padding: 50px;
+    text-align: center;
+    border: 3px solid blue;
+}
+
+.panel{
+    background-color: aqua;
+    padding: 20px;
+    float: left;
+}
+
+.principal{
+    background-color: rgb(197, 173, 36);
+    padding: 20px;
+    height: 300px;
+    border: 3px solid blue
+}
+
+.pie{
+    background-color: rgb(59, 24, 40);
+    clear: both;
+    padding: 20px;border: 3px solid blue
+}

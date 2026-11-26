@@ -1,0 +1,53 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: red;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#titulo2 {
+    text-align: center;
+    color: white;
+    text-transform: lowercase;
+    font-size: 1.2em;
+}
+
+#titulo2::before, #titulo2::after {
+    content: "''";
+    margin: 5px;
+    padding: 0 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main {
+    padding: 20px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, green, white);
+}
+
+article {
+    margin-top: 50px;
+    font-size: 1.5em;
+    text-align: justify;
+    column-count: 3;
+    column-gap: 2em;
+    column-rule: 3px solid brown;
+}
+
+p::first-letter {
+    font-size: 3em;
+    color: brown;
+}
+
+p::first-line {
+    color: green;
+}

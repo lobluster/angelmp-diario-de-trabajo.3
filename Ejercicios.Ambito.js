@@ -1,0 +1,1 @@
+let solu = document.querySelector("#solucion")

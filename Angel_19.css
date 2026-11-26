@@ -1,0 +1,114 @@
+html{
+   scroll-behavior: smooth;
+}
+body{
+   width: 70%;
+   margin: auto;
+   font-size: 1.5em;
+}
+section {
+   transition: 0.4s;
+   animation: aparecer 2s;
+}
+
+.container {
+   width: 70%;
+   margin: auto;
+}
+
+section:hover {
+   box-shadow: 0 5px 20px gray;
+   opacity: 0.6;
+}
+
+
+nav {
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   display: grid;
+   grid-auto-flow: column;
+   text-align: center;
+   width: 100%;
+}
+
+
+@keyframes aparecer {
+   from { opacity: 0; transform:scale(1.2)}
+   to {  opacity: 1; transform:scale(1);}
+}
+
+
+section:target{
+   animation: aparecer 2s ease;
+}
+
+
+@keyframes revelarScroll {
+   from {
+       opacity: 0;
+       transform: translateY(80px) scale(0.5);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0) scale(1);
+   }
+}
+
+section {
+   animation: revelarScroll linear both;
+   animation-timeline: view();
+   animation-range: entry 0% entry 100%;
+   width: 70%;
+   
+}
+
+@media (max-width:400px) {
+   nav{
+      grid-auto-flow: row;
+      font-size: 1em;
+      background-color: aqua;
+   }
+}
+
+nav{
+   display: grid;
+   grid-auto-flow: column;
+   text-align: center;
+}
+
+nav a {
+   text-decoration: none;
+   color: white;
+   padding: 15px;
+}
+
+@media (min-width: 600px){
+   nav{
+      font-size: 2em;
+   }
+   nav a{
+      padding: 25px;
+      background-color: brown;
+   }
+}
+
+
+@media (max-width:600px) and (min-width: 400px){
+   nav{
+      font-size: 0.9em;
+      background-color:burlywood;
+   }
+   nav a{
+      padding: 15px;
+   }  
+}
+
+
+@media (max-width:400px) {
+   nav{
+      grid-auto-flow: row;
+      font-size: 1em;
+      background-color:cadetblue;
+   } 
+}

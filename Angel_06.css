@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu-horizontal {
+    overflow: hidden;
+    background-color: black;
+    border: 5px double white;
+}
+
+.menu-horizontal a {
+    float: left;
+    width: 25%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu-horizontal a:hover {
+    background-color: white;
+    color: black;
+}
+
+.contenedor-principal {
+    display: flex;
+    min-height: 400px;
+}
+
+.menu-vertical {
+    width: 26%;
+    background-color: black;
+    border: 5px double white;
+}
+
+.menu-vertical a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu-vertical a:hover {
+    background-color: white;
+    color: black;
+}
+
+.contenido {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    border-top: 5px double white;
+}
+
+.footer-menus {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-flex {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-flex a {
+    color: white;
+    background-color: #444;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.menu-flex a:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.menu-grid a {
+    color: white;
+    background-color: #444;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.menu-grid a:hover {
+    background-color: white;
+    color: black;
+}

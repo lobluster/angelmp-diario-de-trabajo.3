@@ -1,0 +1,233 @@
+/* --- ESTILOS GENERALES Y NAVEGACIÓN --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+header.nav-principal {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+header.nav-principal a {
+    color: white;
+    text-decoration: none;
+    margin: 4px 6px;
+    padding: 5px 10px;
+    background-color: #444;
+    border-radius: 4px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+header.nav-principal a:hover {
+    background-color: white;
+    color: black;
+}
+
+.seccion-ejercicio {
+    padding: 60px 20px;
+    border-bottom: 8px solid #bbb;
+    background-color: #fafafa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-ejercicio > h1.titulo-ej {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+/* --- EJ 2 & 3 --- */
+.ej-02-3-container {
+    background-color: beige;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+.ej-02-3-container p { color: blue; }
+.ej-02-3-container pre { color: #d2e8d7; background-color: #eda6cf; padding: 10px; }
+
+/* --- EJ 4 --- */
+.ej-04-container {
+    background-color: beige;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+}
+.ej-04-container .titulo-feria {
+    background-color: rgba(255, 6, 6, 0.72);
+    color: white;
+    border: solid;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ej-04-container .nav-interna { margin-bottom: 20px; }
+.ej-04-container .nav-interna a { margin-right: 15px; color: #0066cc; text-decoration: none; font-weight: bold; }
+.ej-04-container p { color: blue; }
+.ej-04-container pre { color: #ff0000; background-color: #eda6cf; padding: 10px; }
+.ej-04-container .sub-seccion { margin-top: 20px; }
+
+/* --- EJ 5 & 9 --- */
+.ej-05-container, .ej-09-container {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 8px;
+}
+.ej-05-container .linea-negra, .ej-09-container .linea-negra {
+    width: 100%; max-width: 700px; height: 80px; background-color: #333; color: white; display: flex; align-items: center; padding-left: 20px; font-size: 18px;
+}
+.ej-05-container .bolas, .ej-09-container .bolas {
+    display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+}
+.ej-05-container .bola, .ej-09-container .bola {
+    width: 160px; height: 160px; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-align: center; overflow: hidden; border: 4px solid;
+}
+.ej-09-container .bola img { width: 100%; height: 100%; object-fit: cover; }
+.ej-05-container .azul, .ej-09-container .azul { background-color: #0000FF; color: white; border-color: #0000FF; }
+.ej-05-container .amarilla, .ej-09-container .amarilla { background-color: #FFFF00; color: black; border-color: #FFFF00; }
+.ej-05-container .roja, .ej-09-container .roja { background-color: #FF0000; color: white; border-color: #FF0000; }
+.ej-05-container .linea-verde, .ej-09-container .linea-verde {
+    width: 100%; max-width: 700px; height: 80px; background-color: #7CFC00; color: black; display: flex; align-items: center; padding-left: 20px; font-size: 18px;
+}
+
+/* --- EJ 6 --- */
+.ej-06-container {
+    max-width: 1000px; width: 100%; border: 2px solid #ccc; background-color: white; border-radius: 8px; overflow: hidden;
+}
+.ej-06-container .header-ej6 .menu-horizontal { overflow: hidden; background-color: black; border: 5px double white; }
+.ej-06-container .header-ej6 .menu-horizontal a { float: left; width: 25%; color: white; text-align: center; padding: 20px; text-decoration: none; }
+.ej-06-container .header-ej6 .menu-horizontal a:hover { background-color: white; color: black; }
+.ej-06-container .contenedor-principal { display: flex; min-height: 250px; }
+.ej-06-container .menu-vertical { width: 26%; background-color: black; border: 5px double white; }
+.ej-06-container .menu-vertical a { display: block; color: white; padding: 20px; text-decoration: none; }
+.ej-06-container .menu-vertical a:hover { background-color: white; color: black; }
+.ej-06-container .contenido { flex: 1; padding: 20px; background-color: #f4f4f4; }
+.ej-06-container footer { background-color: #222; color: white; padding: 20px; border-top: 5px double white; }
+.ej-06-container .footer-menus { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+.ej-06-container .menu-flex { display: flex; gap: 15px; }
+.ej-06-container .menu-flex a, .ej-06-container .menu-grid a { color: white; background-color: #444; padding: 10px 20px; text-decoration: none; border-radius: 4px; text-align: center; }
+.ej-06-container .menu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+
+/* --- EJ 7 --- */
+.ej-07-container { max-width: 800px; width: 100%; }
+.ej-07-container section.lista-box { width: 100%; margin: 15px auto; border: dashed 2px #333; padding: 20px; border-radius: 6px; }
+.ej-07-container h1.titulo-practica { text-align: center; margin-bottom: 15px; }
+.ej-07-container ol ol { list-style-type: lower-roman; }
+.ej-07-container .listaDesordenada { background-color: bisque; }
+.ej-07-container .listaOrdenada { background-color: cornflowerblue; }
+.ej-07-container .listaDefinicion { background-color: darkgreen; color: white; }
+
+/* --- EJ 8 --- */
+.ej-08-container {
+    background-color: #2b7cb3; padding: 20px; border-radius: 8px; max-width: 900px; width: 100%;
+}
+.ej-08-container .titulo-principal { background-color: white; text-align: center; padding: 20px; border: 3px solid black; border-radius: 10px; margin-bottom: 20px; }
+.ej-08-container .grid-imagenes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.ej-08-container .item-grid { border: 3px double white; background-color: black; overflow: hidden; height: 180px; }
+.ej-08-container .item-grid img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* --- EJ 10 --- */
+.ej-10-container { background-color: #fcfbfa; padding: 20px; border-radius: 8px; max-width: 900px; width: 100%; color: #3e2723; }
+.ej-10-container .header-10 { border: 4px solid #6d4c41; background-color: #efebe9; text-align: center; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+.ej-10-container .todo-10 { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.ej-10-container .card { flex: 1; min-width: 280px; border: 4px solid #8d6e63; background-color: #f5eee6; padding: 20px; border-radius: 8px; }
+.ej-10-container .card h2 { font-size: 20px; margin-bottom: 15px; color: #5d4037; border-bottom: 2px solid #d7ccc8; padding-bottom: 5px; }
+.ej-10-container .card iframe, .ej-10-container .card audio { width: 100%; border-radius: 4px; }
+.ej-10-container .card iframe { aspect-ratio: 16/9; border: none; }
+.ej-10-container .carrusel-interno { display: flex; height: 200px; cursor: n-resize; width: 100%; }
+.ej-10-container .carrusel-interno img { width: 0; flex-grow: 1; object-fit: cover; opacity: 0.8; transition: 1.5s ease; }
+.ej-10-container .carrusel-interno img:hover { width: 200px; opacity: 1; }
+.ej-10-container .leyenda { text-align: center; margin-top: 10px; font-size: 14px; color: #5d4037; }
+
+/* --- EJ 13 --- */
+.ej-13-container {
+    background: linear-gradient(to right, rgb(83, 213, 236), rgb(182, 186, 243), rgb(245, 96, 153));
+    padding: 30px; border-radius: 8px; max-width: 900px; width: 100%;
+}
+.ej-13-container .carrusel-13 { display: flex; height: 250px; cursor: n-resize; width: 100%; }
+.ej-13-container .carrusel-13 img { width: 0; flex-grow: 1; object-fit: cover; opacity: 0.8; transition: 4s ease; }
+.ej-13-container .carrusel-13 img:hover { width: 300px; opacity: 1; filter: contrast(120%); }
+.ej-13-container .fuente-redaction { font-family: "Redaction 10", serif; font-weight: 400; text-align: center; }
+.ej-13-container p.fuente-redaction { text-align: justify; margin: 1rem auto; }
+
+/* --- EJ 14 --- */
+.ej-14-container { background-color: rgb(177, 141, 108); padding: 30px; border-radius: 8px; max-width: 900px; width: 100%; }
+.ej-14-container .header-14 { background-color: brown; padding: 2rem; text-align: center; color: white; border-radius: 6px; margin-bottom: 20px; }
+.ej-14-container .tabla-scroll { background-color: rgb(177, 141, 108); padding: 1rem; overflow: scroll; }
+.ej-14-container table { background-image: linear-gradient(to right, rgb(235, 140, 140), white, rgb(162, 136, 255)); width: 100%; border-collapse: collapse; }
+.ej-14-container td, .ej-14-container th { border: 2px solid black; text-align: center; padding: 1rem; }
+.ej-14-container th { background-color: brown; color: white; }
+
+/* --- EJ 16 --- */
+.ej-16-container {
+    background-image: url('mundial2026.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 900px; width: 100%; border-radius: 8px; overflow: hidden; color: white;
+}
+.ej-16-inner { background-color: rgba(0, 0, 0, 0.6); padding: 30px; }
+.ej-16-container .header-16 { background-color: rgba(0, 0, 0, 0.7); padding: 20px; text-align: center; border-radius: 6px; margin-bottom: 20px; }
+.ej-16-container .main-16 { padding: 20px; background-color: rgba(0, 0, 0, 0.5); border-radius: 6px; }
+
+/* --- EJ 17 --- */
+.ej-17-container { background-color: white; padding: 30px; border-radius: 8px; max-width: 900px; width: 100%; color: #333; }
+.ej-17-container *::selection { background: red; color: white; }
+.ej-17-container h1 { text-align: center; text-transform: uppercase; }
+.ej-17-container #titulo2 { text-align: center; color: #555; text-transform: lowercase; font-size: 1.1em; margin: 15px 0; }
+.ej-17-container #titulo2::before, .ej-17-container #titulo2::after { content: "''"; margin: 5px; padding: 0 5px; border: 1px solid black; border-radius: 10px; }
+.ej-17-container .main-17 { padding: 20px; border-radius: 25px; background-image: linear-gradient(to bottom, green, white); }
+.ej-17-container .article-17 { margin-top: 30px; font-size: 1.2em; text-align: justify; column-count: 3; column-gap: 2em; column-rule: 3px solid brown; }
+.ej-17-container p::first-letter { font-size: 2.5em; color: brown; }
+.ej-17-container p::first-line { color: green; }
+
+/* --- EJ 18 & 19 --- */
+.ej-18-19-wrapper {
+    background-color: white; padding: 30px; border-radius: 8px; max-width: 900px; width: 100%; font-size: 1.2em;
+}
+.ej-18-19-wrapper .nav-18-19 {
+    position: sticky; top: 70px; z-index: 100; display: grid; grid-auto-flow: column; text-align: center; background-color: brown;
+}
+.ej-18-19-wrapper .nav-18-19 a { color: white; text-decoration: none; padding: 15px; font-weight: bold; }
+.ej-18-19-wrapper .sec-animada {
+    margin: 40px 0; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #fdfdfd; transition: 0.4s; animation: aparecer 2s ease;
+}
+.ej-18-19-wrapper .sec-animada:hover { box-shadow: 0 5px 20px gray; opacity: 0.8; }
+@keyframes aparecer {
+   from { opacity: 0; transform: scale(1.2); }
+   to { opacity: 1; transform: scale(1); }
+}
+@media (max-width: 600px) {
+    .ej-18-19-wrapper .nav-18-19 { grid-auto-flow: row; font-size: 0.9em; background-color: burlywood; }
+    .ej-18-19-wrapper .nav-18-19 a { padding: 10px; }
+}
